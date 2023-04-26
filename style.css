@@ -1,0 +1,134 @@
+body {
+  background:  #f9e5ac;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+h1 {
+  color: #6e9bc3;
+  padding: 0 20px;
+  font-size: 60px;
+  text-align: center;
+  padding: 0;
+  transform: translateX(-69%);
+}
+
+h2,p {
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+input {
+  display: block;
+  margin: 0 auto;
+  width: 130px;
+  height: 40px;
+  border-radius: 15px;
+  padding: 15px 10px;
+  border: none;
+  background: #6e9bc3;
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  outline:none;
+}
+
+textarea {
+  display: block;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  padding: 15px;
+  border: none;
+  outline: 6px solid #6e9bc3;
+  background: #f9e5ac;
+  font-size: 20px;
+}
+
+button {
+  width: 332px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background:  #6e9bc3;
+  color: #fff;
+  font-size: 25px;
+}
+
+.btns button {
+  background: none;
+  color: #6e9bc3;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btns {
+  display: grid;
+  grid-template-columns: repeat(6, 50px);
+  gap: 10px;
+}
+
+#display {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+#display button {
+  margin-bottom: 2px;
+  font-size: 20px;
+  width: 80px;
+  display: inline-block;
+}
+
+@media (max-width: 1367px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  h1{
+    transform: translateX(-1%);
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  h1{
+    transform: translateX(-3%);
+  }
+  .header-container{
+    display: block;
+  }
+  /* .btns {
+    transform: translateX(-1%);
+  } */
+}
+
+
+
+
